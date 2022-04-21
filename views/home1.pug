@@ -1,0 +1,31 @@
+extends base1.pug 
+
+block styling
+    style 
+        include ../static/home1style.css
+
+block contenting
+    h2 This is the home page of your current working directory
+    div#f.options
+        input(type="radio", name="same", id="yes" value="yes")
+        |   yes   
+        input(type="radio", name="same", id="no" value="no")     
+        |   no
+    div#s1.options
+        input(type="radio", name="same1", id="going" value="going") 
+        |   going       
+        input(type="radio", name="same1", id="coming" value="coming")    
+        |   coming
+    div#s2.options
+        input(type="radio", name="same2", id="notgoing" value="not going") 
+        |   not going       
+        input(type="radio", name="same2", id="notcoming" value="not coming")    
+        |   not coming 
+    br
+    hr
+    br
+    div#conclusion
+
+block scripting 
+    script 
+        include ../static/home1java.js

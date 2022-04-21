@@ -1,0 +1,44 @@
+//- niche wala line base.pug k taraf ishara krrha hai taki usme koi v change, modification, ya fir replace kiya ja sake
+extends base.pug  
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+
+    section#introsection 
+        div WELCOME TO VERMAJI'S DANCE ACADEMY
+        div.small EAT SLEEP REPEAT 
+
+    section#missionsection 
+        h2  Our Missions 
+        div.card
+            h3 DANCE PERFECTION
+            div.card-box
+                div.card-img
+                    img(src="../static/windows.jpg" alt="")
+                div.card-content
+        div.card
+            h3 DANCE THE WAY YOU LIKE
+            div.card-box
+                div.card-img
+                    img(src="../static/windows.jpg" alt="")
+                div.card-content
+        div.card
+            h3 EXPERT TEACHING
+            div.card-box
+                div.card-img
+                    img(src="../static/windows.jpg" alt="")
+                div.card-content
+
+    section#sponsersection 
+        h2  Our Sponsers 
+        div#sponsers
+            img(src="../static/insta.jpg" class="spimage")
+            img(src="../static/fb.jpg" class="spimage")
+            img(src="../static/twitter.jpg" class="spimage")
+            img(src="../static/yt.jpg" class="spimage")

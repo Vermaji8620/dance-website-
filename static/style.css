@@ -1,0 +1,131 @@
+*{
+    margin: 2px;
+    box-sizing: border-box;
+    border-radius: .3rem;
+}
+
+#navbar {
+    background-color: #bc3232;
+    padding: 2px 2px;
+}
+
+#navbar ul{
+    display: flex;
+    position: relative;
+    top: .3rem;
+    left: 1px;
+}
+
+#navbar li{
+    list-style: none; /* for removing the dots in list */
+    text-align: center;
+    margin: 15px 1px;
+}
+
+#navbar li a{
+    text-decoration: none; /* for removing the underline from the listed items */
+    color: white;
+    padding: 13px 30px;
+    margin: 2px 2px;
+    font-family: algerian;
+}
+
+#navbar li a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+#introsection{
+    height: 300px;
+    background: url('/static/gym5.jpg');
+    color: white;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: algerian;
+    font-size: 2rem;
+}
+
+#introsection div.small{
+    font-size: 27px;
+}
+
+#missionsection{
+    height: 300px;
+}
+
+#sponsersection{
+    height: 300px;
+    background-color: rgba(255, 255, 0, 0.479);    
+}
+
+#missionsection h2{
+    text-align: center;
+    font-family: algerian;
+    padding-top: 12px;
+}
+
+#sponsersection h2{
+    text-align: center;
+    font-family: algerian;
+    padding-top: 12px;
+}
+
+.card{
+    border: 2px solid red;
+    border-radius: 10px;
+    width: 30%;
+    margin: 23px 15px;
+    height: 210px;
+    display: inline-block;
+}
+
+.card h3{
+    text-align: center;
+    margin: 12px ;
+}
+
+#logo{
+    display: flex;
+    width: 100px;
+    position: relative;
+    top: 1px;
+    height: 60px;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img img{
+    position: absolute;
+    top: 29rem;
+    /* left: 2rem; */
+    height: inherit;
+    padding: 0 14px;
+}
+
+#sponsers{
+    height: 120px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.spimage{
+    height: 190px;
+    padding: 0px 0px;
+    margin: 15px 25px;
+    width: 200px;
+}
+    
+#footer{
+    height: 40px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 2em;
+}

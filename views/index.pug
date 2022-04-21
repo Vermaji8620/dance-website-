@@ -1,0 +1,63 @@
+//- index.pug.....indendation is v.v.important in pug file..so write it carefully
+doctype html
+html
+  head
+    title vermaji dance academy
+    style
+        include ../static/style.css
+    //-   yeh jo hai by default usko (style.css) ko views folder k andar khojta hai(jaha pe khud index.pug present hai), to isiliye hmko (../) krke views folder k bahar jana hoga, aur phir, static folder k andar jake (style.css) file ko point out krna hoga
+  body
+    nav#navbar.top
+        ul
+            div#logo
+                img(src="../static/icon1.jpg")
+            li
+                a(href="/Home") Home
+            li
+                a(href="/About") About 
+            li
+                a(href="/Services") Services 
+            li
+                a(href="/Class Info") Class Info
+            li
+                a(href="/Contact Us") Contact Us
+    
+    section#introsection 
+        div WELCOME TO VERMAJI'S DANCE ACADEMY
+        div.small EAT SLEEP REPEAT 
+
+    section#missionsection 
+        h2  Our Missions 
+        div.card
+            h3 DANCE PERFECTION
+            div.card-box
+                div.card-img
+                    img(src="../static/windows.jpg", alt="")
+                div.card-content
+        div.card
+            h3 DANCE THE WAY YOU LIKE
+            div.card-box
+                div.card-img
+                    img(src="../static/windows.jpg", alt="")
+                div.card-content
+        div.card
+            h3 EXPERT TEACHING
+            div.card-box
+                div.card-img
+                    img(src="../static/windows.jpg", alt="")
+                div.card-content
+
+    section#sponsersection 
+        h2  Our Sponsers 
+        div#sponsers
+            img(src="../static/insta.jpg", class="spimage")
+            img(src="../static/fb.jpg", class="spimage")
+            img(src="../static/twitter.jpg", class="spimage")
+            img(src="../static/yt.jpg", class="spimage")
+
+    footer#footer 
+        div    copyright © 2022 VermajiDanceAcademy.com
+        div    All Rights Reserved
+
+    script
+        include ../static/index.js

@@ -1,0 +1,17 @@
+{
+  "name": "dancewebsite_using_express_n_pug",
+  "version": "1.0.0",
+  "description": "this is a website for a popular dance academy",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aditya raj verma",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.10",
+    "nodemon": "^2.0.15"
+  }
+}

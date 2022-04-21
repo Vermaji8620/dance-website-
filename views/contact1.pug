@@ -1,0 +1,45 @@
+extends base1.pug 
+
+block styling   
+    style   
+        include ../static/contact1style.css
+
+block contenting
+    div.makeform
+        form(action="/contact1" method="post" id="forming") 
+            
+            |   Enter the name
+            input(type="text", name="name", id ="name" class="forum")
+            
+            br
+            br
+
+            |   Enter the age
+            input(type="text", name="age", id ="age" class="forum")
+
+            br
+            br
+            
+            |   Enter the gender
+            input(type="text", name="gender", id ="gender" class="forum")
+
+            br
+            br
+            
+            |   Enter the address
+            textarea(type="text", name="address", id ="address" class="forum")
+
+            br
+            br
+            
+            |   More about you
+            textarea(type="text", name="more", id ="more" class="forum")
+
+            br
+            br
+
+            button(type="submit" class="btn") SUBMIT
+            
+
+block scripting     
+        script(src='/static/contact1java.js')
