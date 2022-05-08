@@ -4,7 +4,7 @@ let path = require("path");
 let fs = require("fs");
 let mongoose = require("mongoose");
 let bodyparser = require("body-parser");
-mongoose.connect("mongodb://localhost:27017/dancedance", {
+mongoose.connect("mongodb://localhost:27017/vermaji", {
   useNewUrlParser: true,
 }); //connecting to the database of name 'contactdance'
 let port = 8000;
@@ -18,7 +18,7 @@ let contactschema = new mongoose.Schema({
   desc: String,
 });
 
-let Contact = mongoose.model("Contact", contactschema);
+let Contact = mongoose.model("bird", contactschema);
 
 //EXPRESS SPECIFIC STUFF
 app.use("/static", express.static("static")); //for serving static files
@@ -65,3 +65,5 @@ app.get("/index", (req, res) => {
 app.listen(port, () => {
   console.log("the application has started succesfully");
 });
+
+
